@@ -5,6 +5,6 @@
 // })
 
 export const api = axios.create({
-    baseURL: 'swapi.dev/api/',
+    baseURL: 'https://swapi.dev/api/',
     timeout: 3000
 })
