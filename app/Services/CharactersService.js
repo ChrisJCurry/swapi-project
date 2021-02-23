@@ -12,7 +12,7 @@ class CharactersService {
         
     // })
     getCharacters() {
-        api.get('people').then(res => {
+        api.get('people/').then(res => {
 
             if(res.data.results != null) {
                 ProxyState.characters = res.data.results.map(rawCharacterData => new Character(rawCharacterData))

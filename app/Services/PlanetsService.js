@@ -12,7 +12,7 @@ class PlanetsService {
         
     // })
     getPlanets() {
-        api.get('planets').then(res => {
+        api.get('planets/').then(res => {
             console.log(res.data)
 
             if(res.data.results != null) {

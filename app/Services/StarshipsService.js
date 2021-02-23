@@ -12,7 +12,7 @@ class StarshipsService {
         
     // })
     getStarships() {
-        api.get('starships').then(res => {
+        api.get('starships/').then(res => {
             console.log(res.data)
 
             if(res.data.results != null) {
